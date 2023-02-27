@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="./includes/css/style.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Gage's Hotel | Lab 3</title>
+    </head>
+    <body>
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Gage's Hotel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Lab01/lab01.html">Lab 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Lab02/lab02.html">Lab 2</a>
+                    </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" href="../Lab03/lab03.html">Lab 3</a>
+                    </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../Lab04/lab04.html">Lab 4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="../Lab05/lab05.html">Lab 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="../Lab06/lab06.html">Lab 6</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Cards Div -->
+    <div class="container-fluid px-5 mt-5">
+    <div class="container mb-3 mt-3">
+      <div class="container" style="display: grid; place-items: center; text-align:center;">
+        <div class="row mb-5">
+          <div class="col mx-5 mb-5" style="display: grid; place-items: center;">
+            <div class="card" style="width: 18rem;">
+<!-- Find Spaces In Name Card-->
+              <div class="card-body">
+                <h5 class="card-title">Find Spaces in a Name</h5>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">🚀</span>
+                  <input id="spaceInput" type="text" class="form-control" placeholder="Enter Text Here" name="spacesInput" required>
+                </div>
+                <div id="spaceAnswer1" class="mb-3"></div>
+                <h5 class="card-title">Find Letter in a Name</h5>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">🅱</span>
+                  <input id="charInput" type="text" class="form-control" placeholder="Enter Text Here" required>
+                </div>
+                <div id="spaceAnswer2" class="mb-3"></div>
+                <a id="findBtn" href="#" class="btn btn-outline-info mx-auto">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+<!-- Working With Time-->
+          <div class="col mx-5 mb-5" style="display: grid; place-items: center;">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Working with Time</h5>
+                <label for="pickedDate">Select Date</label>
+                <div class="input-group">
+                  <span class="input-group-text">📆</span>
+                  <input id="pickedDate" type="date" class="form-control" required>
+                </div>
+                <p class="card-text mt-3">Display the date here: <span id="displayDate"></span></p>
+                <p class="card-text">How many days in the month: <span id="displayDaysInMonth"></span></p>
+                <p class="card-text">How many work days: <span id="displayWeekdaysInMonth"></span></p>
+                <p class="card-text">BC Minimum Wage: <span id="minWage"></span></p>
+                <p class="card-text">Salary for the month (8 hours): <span id="payout"></span></p>
+                <a id="calculateBtn" href="#" class="btn btn-outline-info mt-3">Calculate</a>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- Iteration Card -->
+        <div class="row">
+          <div class="col mx-5 mb-5" style="display: grid; place-items: center;">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Error Handling - Number Larger Than 2</h5>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">✅❌</span>
+                  <input id="errorInput" type="text" class="form-control" placeholder="Enter Text Here">
+                </div>
+                <p class="card-text">Your number value is: <span id="errorOutput1"></span></p>
+                <p class="card-text">Your number is less than 2: <span id="errorOutput2"></span></p>
+                <div id="errorDisplay"></div>
+                <a id ="calculateErrorBtn" href="#" class="btn btn-outline-info mt-3">Calculate Wage</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+<!-- Footer -->
+    <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="../Lab01/lab01.html" class="nav-link px-2 text-muted">Lab 1</a></li>
+            <li class="nav-item"><a href="../Lab02/lab02.html" class="nav-link px-2 text-muted">Lab 2</a></li>
+            <li class="nav-item"><a href="../Lab03/lab03.html" class="nav-link px-2 text-muted">Lab 3</a></li>
+            <li class="nav-item"><a href="../Lab04/lab04.html" class="nav-link px-2 text-muted">Lab 4</a></li>
+            <li class="nav-item"><a href="../Lab05/lab05.html" class="nav-link px-2 text-muted disabled">Lab 5</a></li>
+            <li class="nav-item"><a href="../Lab06/lab06.html" class="nav-link px-2 text-muted disabled">Lab 6</a></li>
+          </ul>
+          <p class="text-center text-muted">© 2023 Gage's Hotel, Inc</p>
+        </footer>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> 
+    <script src="./includes/js/script.js"></script>   
+</body>
+</html>

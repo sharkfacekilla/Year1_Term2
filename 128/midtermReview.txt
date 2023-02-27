@@ -1,0 +1,15 @@
+MIDTERM review
+Where is JS Written? Console, external file, head or body
+Primitive data types: number, string, Boolean
+Syntax + Creation of Objects And Arrays []; {};
+Parameters vs Arguments
+Types of Functions: anonymous functions (function without a name), ()=>{}, ES5 function a Func(){}. callback
+=,==,===
+Date();
+Async / Await
+How to call items in an array or object
+What does the This keyword refer to.
+Switch case Break statements
+Try Catch Finally
+For Loops (for && forEach);
+Conditionals if, else, if else
