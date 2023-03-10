@@ -1,0 +1,60 @@
+/* Declare CSS variables*/
+:root {
+    --white: #f3f3f3;
+    --black: #333333;
+}
+
+.card {
+    position: relative;
+    height: 500px!important;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.2s ease-out;
+    margin-bottom: 30px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-overlay {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    border-radius: 6px;
+    height: 100.5%;
+    width: 100.5%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .card-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+  }
+  
+  .card:hover .card-hover {
+    opacity: 1;
+  }
+  
+  .card-hover-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, 40%);
+    text-align: left;
+    color: var(--white);
+  }
+  
+  .card-title {
+    color: var(--white);
+  }
+  
+  .card-text {
+    color: var(--white);
+  }
+  
