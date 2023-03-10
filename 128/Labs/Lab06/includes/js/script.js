@@ -140,6 +140,35 @@ const hotelModalClose = document.getElementById(`hotelModalClose`);
 let savoyHotel = new Hotel(`Savoy Hotel`, `London`, savoyRooms, 4, 20, true, savoyRestaurants, true, true);
 let poloniaHotel = new Resort(`Hotel Polonia`, `Warsaw`, poloniaRooms, 6, 9, true, poloniaRestaurants, true, true, `Resort`, false, true, false);
 
+const hotelModalBody = document.querySelector('.modal-body');
+const hotelModalContent = document.querySelector('.modal-content');
+
+// Listen for the hide.bs.modal event
+modal1.addEventListener('hide.bs.modal', function (event) {
+  // Check if the event was triggered by clicking outside of the modal
+  if (event.target === modal1) {
+    //remove button event listeners on close (basically the same as the cancel button function)
+    hotelBookBtn.removeEventListener('click', poloniaBookBtn);
+    hotelCancelBtn.removeEventListener('click', poloniaCancelBtn);
+    hotelBookBtn.removeEventListener('click', savoyBookBtn);
+    hotelCancelBtn.removeEventListener('click', savoyCancelBtn);
+    hotelName.innerHTML = ''; //clears modal content on close
+    hotelDescName.innerHTML = '';
+    hotelCity.innerHTML = '';
+    hotelRooms.innerHTML = '';
+    gymService.innerHTML = '';
+    shuttleService.innerHTML = '';
+    restaurant.innerHTML = '';
+    hotelRestaurants.innerHTML = '';
+    hotelRoomsAvailable.innerHTML = '';
+    fullyBooked.innerHTML = '';
+    isBeachFront.innerHTML = '';
+    barService.innerHTML = '';
+    newBar.innerHTML = '';
+    hotelModalBS.hide();
+  }
+});
+
 //close modal
 hotelModalClose.addEventListener(`click`, function () {
 	//remove button event listeners on close
